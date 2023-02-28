@@ -14,68 +14,84 @@
     <title>DsViaCEP</title>
   </head>
   <body>
-    <header class="nav-container"> <!--Container da nav-bar-->
-      <nav class="nav-main"> <!--Barra de navegação principal-->
+    <header class="nav-container">
+      <!--Container da nav-bar-->
+      <nav class="nav-main">
+        <!--Barra de navegação principal-->
         <h1>DsViaCEP</h1>
         <div class="contact-link">Contato</div>
       </nav>
     </header>
     <main>
-      <section id="form-section">
-        <div>
+      <section id="form-section" class="form-container">
+        <div class="card-form">
           <form name="newAddress">
-            <div>
-              <label for="cep"></label>
-              <input name="cep" id="cep" type="text" placeholder="CEP" />
+            <div class="form-control">
+              <label for="cep">CEP</label>
+              <input
+                name="cep"
+                id="cep"
+                class="form-input"
+                type="text"
+                placeholder="CEP"
+              />
+              <div class="error-message" data-error="cep">Campo Requerido</div>
             </div>
-            <div>
-              <label for="street"></label>
+            <div class="form-control">
+              <label for="street">Logradouro</label>
               <input
                 name="street"
                 id="street"
                 type="text"
+                class="form-input"
                 placeholder="Logradouro"
+                disabled
               />
             </div>
-            <div>
-              <label for="number"></label>
+            <div class="form-control">
+              <label for="number">Número</label>
               <input
                 name="number"
                 id="number"
                 type="text"
+                class="form-input"
                 placeholder="Número"
+                disa
               />
+              <div class="error-message" data-error="number">Campo Requerido</div>
             </div>
-            <div>
-              <label for="cidade"></label>
+            <div class="form-control">
+              <label for="cidade">Cidade</label>
               <input
                 name="cidade"
                 id="cidade"
                 type="text"
+                class="form-input"
                 placeholder="Cidade"
+                disabled
               />
             </div>
-            <div>
-                <button type="submit">Salvar</button>
-                <button>Limpar</button>
+            <div class="form-button">
+              <button name="btnSave" type="submit" class="button-left">Salvar</button>
+              <button name="btnClear" class="button-right">Limpar</button>
             </div>
           </form>
         </div>
       </section>
-      <section id="list-section">
-        <div>
+      <section id="list-section" class="list-container">
+        <div class="card-list-item">
           <h3>São Paulo</h3>
-          <p>Rua dos Jardins, 720</p>
-          <p>11200-345</p>
+          <p class="address-line">Rua dos Jardins, 720</p>
+          <p class="address-cep">11200-345</p>
         </div>
-        <div>
+        <div class="card-list-item">
           <h3>São Paulo</h3>
-          <p>Rua dos Jardins, 720</p>
-          <p>11200-345</p>
+          <p class="address-line">Rua dos Jardins, 720</p>
+          <p class="address-cep">11200-345</p>
         </div>
       </section>
     </main>
 
-    <script src="js/script.js"></script>
-  </body>
+    <script  type="module" src="js/dsviacep.js"></script>  <!--Sistema principal JS-->
+   </body>
 </html>
