@@ -1,3 +1,6 @@
+@import 'modal.css';
+@import 'buttons.css';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -35,6 +38,11 @@ html, body{
 .contact-link{
     color: #fff;
     cursor: pointer;
+}
+
+.contact-link:hover{
+    text-decoration: underline;
+    transform: scale(1.02);
 }
 
 .form-container{
@@ -81,28 +89,6 @@ html, body{
     background-color: #ddd;
 }
 
-.form-button{
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-button button{
-    width: 250px;
-    height: 50px;
-    background-color: #ff8400;
-    color: #fff;
-    border: 0;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.button-left{
-    margin-right: 10px;
-}
-.button-right{
-    margin-left: 10px;
-}
 
 .list-container{
     width: 100%;

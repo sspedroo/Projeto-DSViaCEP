@@ -1,0 +1,28 @@
+.form-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    background-color: #ff8400;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 300ms linear; 
+    animation: normal;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.button-left{
+    margin-right: 10px;
+}
+.button-right{
+    margin-left: 10px;
+}
